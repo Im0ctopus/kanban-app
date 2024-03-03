@@ -6,6 +6,12 @@ import CreateButton from './createBtn'
 import { Skeleton } from '@/components/ui/skeleton'
 import Board from './board'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'All Boards | KanBan',
+}
+
 const Loading = () => {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-4 px-4 py-4">
