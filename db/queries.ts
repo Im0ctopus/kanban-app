@@ -246,6 +246,7 @@ export const getOwnerEmail = async (boardId: number) => {
   JOIN Board b ON u.Id = b.UserId
   WHERE b.Id = ${boardId};
   `
+  console.log(ownerEmail)
   return ownerEmail[0].email
 }
 

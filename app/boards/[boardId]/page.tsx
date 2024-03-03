@@ -64,8 +64,6 @@ const Page: FC<TPage> = async ({ params }) => {
   const session = await getServerSession()
   if (!session) redirect('/')
   const ownerEmail = await getOwnerEmail(params.boardId)
-  console.log('teste: ' + ownerEmail)
-  if (!ownerEmail) redirect('/')
   const role = await getRole(params.boardId)
   return (
     <div className="w-full h-full pt-20 flex flex-col gap-0 justify-center items-center">
