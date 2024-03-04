@@ -167,7 +167,7 @@ const Cards: FC<TCards> = ({ states, cards, boardId, owner, role }) => {
           key={state.id}
           className={`${
             over == state.id && 'scale-105'
-          } w-80 relative transition-all ease-in-out gap-5 flex flex-col justify-start items-center rounded-md bg-secondary max-h-full overflow-auto min-h-40 h-fit p-5 shrink-0`}
+          } w-80 relative transition-all ease-in-out gap-5 flex flex-col justify-start items-center rounded-md bg-secondary max-h-full overflow-auto min-h-40 h-fit p-5 pt-10 shrink-0`}
         >
           <h1
             title={state.statename}
